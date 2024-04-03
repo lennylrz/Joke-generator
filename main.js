@@ -3,7 +3,8 @@ let pronouns = '';
 const random2 = ['poops his pants', 'eats a döner', 'cries while sleeping', 'fights a bull', 'thinks of a joke', 'fixes a lightbulb', 'marries a cat', 'proposes to a girl', 'has an aggresive outburst'];
 const random3 = ['is embarassed', 'says nothing', 'thinks: what the hell', 'calls a doctor', 'jumps off of a bridge', 'initiates a fight', 'cancels the plans for tonight']
 const randomArt = ['(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧', '~(‾▿‾)~', '( ͡° ͜ʖ ͡°)', 'ಠ_ಠ']
-const randomReason = ''
+let randomReason = ''
+let oPro = '';
 
 let i = Math.floor(Math.random() * random1.length);
 let j = Math.floor(Math.random() * random2.length);
@@ -23,21 +24,49 @@ const randomJoke = () => {
     } else if (ranOne === 'woman' || ranOne === 'dancer') {
         pronouns = 'She'
     }
-
+    if (ranOne === 'man' || ranOne === 'football player' || ranOne === 'magician') {
+        oPro = 'his'
+    } else if (ranOne === 'woman' || ranOne === 'dancer') {
+        oPro = 'her'
+    }
     if (ranThree === 'is embarassed') {
-        randomReason = 'can not be embarrased!'
+        if(ranOne === 'cow' || ranOne === 'bird' || ranOne === '' || ranOne === 'döner' || ranOne === 'cat' || ranOne === 'bison') {
+        randomReason = 'can not be embarrased!' }
+        else {
+            randomReason = 'is all alone and its all happenining inside ' + oPro + ' head!!'
+        }
     } else if (ranThree === 'says nothing') {
-        randomReason = 'does not know how to speak!'
+        if(ranOne === 'cow' || ranOne === 'bird' || ranOne === '' || ranOne === 'döner' || ranOne === 'cat' || ranOne === 'bison') {
+            randomReason = 'does not know how to speak!'
+         } else {
+                randomReason = 'is autistic!'
+            }
     } else if (ranThree === 'thinks: what the hell') {
-        randomReason = 'can not think!'
+        if(ranOne === 'cow' || ranOne === 'bird' || ranOne === '' || ranOne === 'döner' || ranOne === 'cat' || ranOne === 'bison') {
+            randomReason = 'can not think!'
+         } else {
+                randomReason = 'does not believe in hell!!'
+            }
     } else if (ranThree === 'calls a doctor') {
-        randomReason = ' doesnt have a phone!'
+        if(ranOne === 'cow' || ranOne === 'bird' || ranOne === '' || ranOne === 'döner' || ranOne === 'cat' || ranOne === 'bison') {
+            randomReason = 'doesnt have a phone!'
+         } else {
+                randomReason = 'is not actually hurt!!'
+            }
     } else if (ranThree === 'jumps off of a bridge') {
-        randomReason = 'can not jump, its fat!'
+        randomReason = 'can not jump, '+ pronouns + ' is just too fat!'
     } else if (ranThree === 'initiates a fight') {
-        randomReason = 'can not fight!'
+        if(ranOne === 'cow' || ranOne === 'bird' || ranOne === '' || ranOne === 'döner' || ranOne === 'cat' || ranOne === 'bison') {
+            randomReason = 'can not fight!'
+         } else {
+                randomReason = 'is gonna get whooped'
+            }
     } else if (ranThree === 'cancels the plans for tonight') {
-        randomReason = 'does not have any plans!'
+        if(ranOne === 'cow' || ranOne === 'bird' || ranOne === '' || ranOne === 'döner' || ranOne === 'cat' || ranOne === 'bison') {
+            randomReason = 'does not have any plans! It is a ' + ranOne + '!!'
+         } else {
+                randomReason = 'is all alone. ' + pronouns + ' is loved by no one!! HAHHAHA'
+            }
     }
     return `What does a ${ranOne} do when ${pronouns} ${ranTwo}? ${pronouns} ${ranThree}!! Do you get it?! It's funny because the ${ranOne} ${randomReason} ${ranArt} `
 }
