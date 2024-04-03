@@ -55,6 +55,35 @@ There is a lot of great comedians in this world with a lot of accessible jokes. 
 
 These elements collectively form the core logic of the random joke generator, ensuring the generation of varied and humorous jokes.
 
+## Result 🖥 
+To display examples of the result, I have run the code multiple times to obtain different outputs:
+##### Example 1:
+    What does a football player do when He thinks of a joke? 
+    He cancels the plans for tonight!! 
+    Do you get it?! 
+    It's funny because the football player is all alone. 
+    He is loved by no one!! HAHHAHA ( ͡° ͜ʖ ͡°) 
+
+##### Example 2:
+    What does a bird do when It fixes a lightbulb? 
+    It cancels the plans for tonight!! 
+    Do you get it?! 
+    It's funny because the bird does not have any plans! 
+    It is a bird!! ~(‾▿‾)~ 
+
+##### Example 3:
+
+    What does a bison do when It proposes to a girl? 
+    It says nothing!! 
+    Do you get it?! 
+    It's funny because the bison does not know how to speak! ~(‾▿‾)~ 
+##### Example 4:
+
+    What does a bird do when It marries a cat? 
+    It thinks: what the hell!! 
+    Do you get it?! 
+    It's funny because the bird can not think! ಠ_ಠ 
+
 ## Conclusion :page_facing_up:
 
 In developing this random joke generator project, several key learnings emerged:
